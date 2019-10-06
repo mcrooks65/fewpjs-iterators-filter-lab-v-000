@@ -3,6 +3,8 @@ let even = arr.filter(n => {
 });
 // even = [2,4,6]
 
-let findMatching = drivers.filter(string => {
-  return string == drivers[string]
-})
+function findMatching (list, name) {
+  return list.filter((driverName) => {
+    return driverName.toLowerCase() === name.toLowerCase
+  })
+}
